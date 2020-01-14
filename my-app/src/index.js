@@ -15,10 +15,10 @@ class Square extends React.Component {
   }
   
   renderAaa(){
-    const {aaa} = this.state;
+    const { aaa, num } = this.state;
     aaa.push(<p id={this.state.num} key={this.state.num}>a</p>)
-    this.setState({aaa:this.state.aaa})
-    this.setState({num:this.state.num+1})
+    this.setState({aaa:aaa})
+    this.setState({num:num+1})
   }
 
  render() {
